@@ -1,0 +1,124 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url('../img/bg-login.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(245, 245, 220, 0.61);
+}
+
+.main .login {
+    padding: 20px;
+    background-color: #ffffffce;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    margin: 10px;
+}
+
+.main .login .header-login {
+    text-align: center;
+}
+
+.main .login .header-login span {
+    font-size: 80px;
+    color: #373838;
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #ffffff;
+    border-radius: 50%;
+    padding: 7px;
+}
+
+.main .login .header-login h1 {
+    font-size: 30px;
+    color: #373838;
+    margin: 20px;
+}
+
+.username-user,
+.key-user {
+    display: flex;
+    align-items: center;
+    border: 1px solid #5c5a5a;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.username-user span,
+.key-user span {
+    color: #373838;
+    font-size: 30px;
+    background-color: #373838;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    color: #ffffff;
+    padding: 5px;
+}
+
+label {
+    font-size: 20px;
+    color: #373838;
+    margin-bottom: 3px;
+    margin-top: 25px;
+    display: block;
+}
+
+input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 25px;
+    border-radius: 10px;
+    padding: 0 3px;
+    background: transparent;
+}
+
+.btn {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.btn button {
+    width: 65%;
+    padding: 10px;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #373838;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    border: 2px solid transparent;
+}
+
+.btn button:hover {
+    background-color: #ffffff;
+    color: #373838;
+    border: 2px solid #373838;
+}
+
+p.login__text {
+    text-align: center;
+    font-size: 14px;
+    color: #373838;
+    margin-top: 10px;
+}

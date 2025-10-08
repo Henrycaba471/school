@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+    <link rel="shortcut icon" href="assets/img/icon-s.png" type="image/x-icon">
+    <title>SCHOOL XII | Home</title>
+</head>
+
+<body>
+    <main class="main">
+        <aside class="materias">
+            <div class="header-materias">
+                <h2>Materias</h2>
+                <span class="material-symbols-outlined">book_ribbon</span>
+            </div>
+            <ul class="materias-list">
+                <li class="materia-item">
+                    <a href="" class="matematicas-asignatura asignatura" data-subject="matematicas"><span
+                            class="material-symbols-outlined">calculate</span>Matemáticas</a>
+                </li>
+                <li class="materia-item">
+                    <a href="" class="ingles-asignatura asignatura"><span
+                            class="material-symbols-outlined">translate</span>Ingles</a>
+                </li>
+                <li class="materia-item">
+                    <a href="" class="castellano-asignatura asignatura"><span
+                            class="material-symbols-outlined">language_spanish</span>Español</a>
+                </li>
+                <li class="materia-item">
+                    <a href="" class="sociales-asignature asignatura"><span
+                            class="material-symbols-outlined">explore</span>Sociales</a>
+                </li>
+                <li class="materia-item">
+                    <a href="" class="naturales-asignature asignatura"><span
+                            class="material-symbols-outlined">biotech</span>Naturales</a>
+                </li>
+                <li class="materia-item horario-clase-li">
+                    <a href="" class="horario-clase"><span
+                            class="material-symbols-outlined">calendar_month</span>Horario de clase</a>
+                </li>
+            </ul>
+        </aside>
+        <section class="content">
+            <header class="header-content">
+                <h1>SCHOOL XII</h1>
+                <nav class="nav">
+                    <div class="user-data">
+                        <div class="data-user-name">
+                            <p class="user-name"></p>
+                            <span class="user-identifier"></span>
+                        </div>
+                        <img src="assets/img/icon.png" alt="profile" class="user-profile" width="50" height="50" />
+                        <button class="btn-options"><span
+                                class="material-symbols-outlined">keyboard_arrow_down</span></button>
+                    </div>
+                </nav>
+            </header>
+            <ul class="options toggle-options">
+                <li class="option-item"><a href="/profile"><span
+                            class="material-symbols-outlined">account_circle</span>Perfil</a></li>
+                <li class="option-item"><a href="/settings"><span
+                            class="material-symbols-outlined">settings</span>Configuración</a></li>
+                <li class="option-item"><a href="" class="logout"><span
+                            class="material-symbols-outlined logout">exit_to_app</span>Cerrar sesión</a></li>
+            </ul>
+            <div class="content-body">
+                <section class="welcome-section">
+                    <h1 class="title-start">¡Bienvenido, Pequeño Explorador! 🚀</h1>
+                </section>
+                <div class="title-home">
+                    <p class="title-asignatura">¡Haz clic en un asignatura para empezar una nueva aventura! ✨</p>
+                </div>
+                <div class="list-temas-learning">
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="loader-container">
+        <span class="loader"></span>
+    </div>
+    <div class="information-animal-modal">
+        <button class="cerrar-modal-animal">x</button>
+        <div class="image-animal">
+            <img src="" alt="animal" width="200">
+        </div>
+        <div class="description-animal">
+            <p><span class="modal-animal-vista"></span></p>
+            <p class="phrase-one">
+                <span class="phrase-english"></span>
+                <span class="phrase-spanish"></span>
+            </p>
+            <p class="phrase-two">
+                <span class="phrase-english"></span>
+                <span class="phrase-spanish"></span>
+            </p>
+        </div>
+        <div class="btns-next-prev">
+            <button type="button"><span class="material-symbols-outlined" id="prev-animal" title="Prev">arrow_circle_left</span></button>
+            <button type="button"><span class="material-symbols-outlined" id="next-animal" title="Next">arrow_circle_right</span></button>
+        </div>
+    </div>
+    <script type="module" src="assets/js/dashboard.js"></script>
+</body>
+
+</html>
