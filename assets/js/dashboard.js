@@ -5,6 +5,7 @@ import { loadPracticeAnimals, loadPracticeFruits, loadPracticeMixed, loadPractic
 import { loadHtmlSectionTest, loadSumaTest } from './tests.js';
 import { LoadThings } from './things.js';
 import { loadWords } from './words.js';
+import { CURRENT_SERVER } from './server.js';
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -50,8 +51,10 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     async function cargarDashboard() {
+        //console.log(LOCAL_SERVER, DEPLOYED_SERVER);
+
         try {
-            const res = await fetch('http://localhost:3000/api/users/dashboard', {
+            const res = await fetch(CURRENT_SERVER + '/api/users/dashboard', {
                 method: 'GET',
                 headers: {
                     'Authorization': `Bearer ${token}`,
@@ -1462,7 +1465,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             if (validarAsignatura) {
                 try {
-                    const temasEncontrados = await fetch(`http://localhost:3000/api/temas/materia-seleccionada/${materia.split('-')[0]}`, {
+                    const temasEncontrados = await fetch(`${CURRENT_SERVER}/api/temas/materia-seleccionada/${materia.split('-')[0]}`, {
                         method: 'GET',
                         headers: {
                             'Authorization': `Bearer ${token}`,

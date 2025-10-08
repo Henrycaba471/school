@@ -1,3 +1,4 @@
+import { CURRENT_SERVER } from "./server.js";
 
 document.addEventListener("DOMContentLoaded", () => {
     const btnLogin = document.querySelector('.login__button');
@@ -11,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
         //console.log(dataLogin);
 
         try {
-            const res = await fetch('http://localhost:3000/api/users/login', {
+            const res = await fetch(CURRENT_SERVER +'/api/users/login', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
